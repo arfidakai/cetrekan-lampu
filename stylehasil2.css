@@ -1,0 +1,213 @@
+.content1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+
+.rumah {
+    display: flex;
+    flex-direction: row;
+    height: 85vh;
+    width: 130vh;
+    color: pink;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 1px white;
+    padding: 5px;
+    margin: 5px;
+}
+
+.remote {
+    height: 85vh;
+    width : 50vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 1px white;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    height: 130px;
+    width: 90px;
+}
+
+details {
+    width: 95%;
+    margin: 5px;
+}
+
+details > summary{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+details > summary > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: solid rgba(0, 0, 0, 0) 1px;
+    border-left: solid white 3px;
+}
+
+details > summary > div:hover {
+    border: solid 1px white;
+    border-left: solid white 3px;
+    cursor: pointer;
+}
+
+details > ul > li {list-style-type: none;}
+
+details > ul > li > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid rgba(0, 0, 0, 0) 1px;
+    border-left: solid white 1px;
+    font-size: small;
+
+}
+
+details > ul > li > div:hover {
+    border: solid white 1px;
+}
+
+.r1 {
+    height: 100%;
+    width: 65%;
+}
+
+.r2 {
+    height: 100%;
+    width: 44%;
+
+}
+
+
+.rKeluarga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 39%;
+    width: 100%;
+    border: solid 1px white;
+    border-right: 0px ;
+}
+
+.rTamu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
+    border: solid 1px white;
+    border-right: 0px ;
+    border-bottom: 0px ;
+}
+
+
+.rTidur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 99%;
+    border: solid 1px white;
+    border-bottom: 0px ;
+}
+
+.rMakan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 39%;
+    width: 99%;
+    border: solid 1px white;
+}
+
+.lampu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.lampu > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 26px;
+    height: 15px;
+    margin: 0 10px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #474547;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    left: 2.5px;
+    bottom: 2.5px;
+    background-color:  lightcyan;
+    transition: .4s;
+    border-radius: 50px;
+}
+
+input:checked + .slider {
+    background-color: palevioletred;
+}
+
+input:checked + .slider:before {
+    transform: translateX(10px);
+}

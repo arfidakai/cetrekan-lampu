@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Sesi 4 (Hasil 2)</title>
+  <link rel="stylesheet" href="stylehasil2.css">
+  <link rel="stylesheet" href="stylehasil21.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <h1>Saklar Lampu</h1>
+  </div>
+  <div class="content1">
+    <div class="rumah">
+      <div class="r1">
+        <div class="rTamu">
+          <h1>Ruang Tamu</h1><br>
+          <div class="lampu">
+            <div>
+              <img src="assets/images/off.gif" alt="" id="lampu1">
+              <h5>Lampu 1</h5>
+            </div>
+            <div>
+              <img src="assets/images/off.gif" alt="" id="lampu2">
+              <h5>Lampu 2</h5>
+            </div>
+            <div>
+              <img src="assets/images/off.gif" alt="" id="lampu3">
+              <h5>Lampu 3</h5>
+            </div>
+            <div>
+              <img src="assets/images/off.gif" alt="" id="lampu4">
+              <h5>Lampu 4</h5>
+            </div>
+          </div>
+        </div>
+        <div class="rKeluarga">
+          <h1>Ruang Keluarga</h1><br>
+          <div class="lampu">
+            <div>
+              <img src="assets/images/off.gif" alt="" id="lampu5">
+              <h5>Lampu 1</h5>
+            </div>
+            <div>
+              <img src="assets/images/off.gif" alt="" id="lampu6">
+              <h5>Lampu 2</h5>
+            </div>
+            <div>
+              <img src="assets/images/off.gif" alt="" id="lampu7">
+              <h5>Lampu 3</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="r2">
+        <div class="rTidur">
+          <h1>Ruang Tidur</h1><br>
+          <div class="lampu">
+            <div>
+              <img src="assets/images/off.gif" alt="" id="lampu8">
+              <h5>Lampu 1</h5>
+            </div>
+            <div>
+              <img src="assets/images/off.gif" alt="" id="lampu9">
+              <h5>Lampu 2</h5>
+            </div>
+          </div>
+        </div>
+        <div class="rMakan">
+          <h1>Ruang Makan</h1><br>
+          <div class="lampu">
+            <div>
+              <img src="assets/images/off.gif" alt="" id="lampuX">
+              <h5>Lampu 1</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="remote">
+      <br>
+      <h1>Remote</h1>
+      <br>
+      <details>
+
+        <!-- RUANG TAMU -->
+
+        <summary>
+          <div>
+            <p>Ruang Tamu</p>
+            <label for="ruang1" class="switch">
+              <input type="checkbox" onchange="rSaklar1()" id="ruang1">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </summary>
+        <ul>
+          <li>
+            <div>
+              <p>Lampu 1</p>
+              <label for="toggle1" class="switch">
+                <input type="checkbox" onchange="saklar()" id="toggle1">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </li>
+          <li>
+            <div>
+              <p>Lampu 2</p>
+              <label for="toggle2" class="switch">
+                <input type="checkbox" onchange="saklar()" id="toggle2">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </li>
+          <li>
+            <div>
+              <p>Lampu 3</p>
+              <label for="toggle3" class="switch">
+                <input type="checkbox" onchange="saklar()" id="toggle3">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </li>
+          <li>
+            <div>
+              <p>Lampu 4</p>
+              <label for="toggle4" class="switch">
+                <input type="checkbox" onchange="saklar()" id="toggle4">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </details>
+
+      <!-- RUANG KELUARGA -->
+
+      <details>
+        <summary>
+          <div>
+            <p>Ruang Keluarga</p>
+            <label for="ruang2" class="switch">
+              <input type="checkbox" onchange="rSaklar2()" id="ruang2">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </summary>
+        <ul>
+          <li>
+            <div>
+              <p>Lampu 1</p>
+              <label for="toggle5" class="switch">
+                <input type="checkbox" onchange="saklar()" id="toggle5">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </li>
+          <li>
+            <div>
+              <p>Lampu 2</p>
+              <label for="toggle6" class="switch">
+                <input type="checkbox" onchange="saklar()" id="toggle6">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </li>
+          <li>
+            <div>
+              <p>Lampu 3</p>
+              <label for="toggle7" class="switch">
+                <input type="checkbox" onchange="saklar()" id="toggle7">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </details>
+
+      <!-- RUANG MAKAN -->
+
+      <details>
+        <summary>
+          <div>
+            <p>Ruang Makan</p>
+            <label for="ruang3" class="switch">
+              <input type="checkbox" onchange="rSaklar3()" id="ruang3">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </summary>
+        <ul>
+          <li>
+            <div>
+              <p>Lampu 1</p>
+              <label for="toggle8" class="switch">
+                <input type="checkbox" onchange="saklar()" id="toggle8">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </li>
+      </details>
+
+      <!-- RUANG TIDUR -->
+
+      <details>
+        <summary>
+          <div>
+            <p>Ruang Tidur</p>
+            <label for="ruang4" class="switch">
+              <input type="checkbox" onchange="rSaklar4()" id="ruang4">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </summary>
+        <ul>
+          <li>
+            <div>
+              <p>Lampu 1</p>
+              <label for="toggle9" class="switch">
+                <input type="checkbox" onchange="saklar()" id="toggle9">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </li>
+          <li>
+            <div>
+              <p>Lampu 2</p>
+              <label for="toggle0" class="switch">
+                <input type="checkbox" onchange="saklar()" id="toggle0">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </details>
+      <a href="index.html"><button> Kembali</button></a>
+    </div>
+  </div>
+
+  <script src="script2.js"></script>
+
+</body>
+
+</html>

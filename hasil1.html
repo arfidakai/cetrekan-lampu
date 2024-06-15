@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Sesi 4</title>
+  <link rel="stylesheet" href="stylehasil1.css">
+  <link rel="stylesheet" href="stylehasil12.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <h1>Saklar Lampu Rumah Arfidakai</h1>
+  </div>
+  <!-- NAVBAR END -->
+
+  <!-- CONTENT -->
+
+  <!-- RUANGAN 1 -->
+
+  <div class="lampu">
+    <div class="ruang">
+      <div class="nama">
+        <h2>Ruang Keluarga</h2>
+        <div class="item">
+          <label for="ruang1" class="switch">
+            <input type="checkbox" onchange="rSaklar1()" id="ruang1">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <br>
+      <div class="tabel">
+        <div class="item">
+          <img src="assets/images/off.gif" alt="" id="lampu1">
+          <br>
+          <div>
+            <label for="toggle1" class="switch">
+              <input type="checkbox" onchange="saklar()" id="toggle1">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/images/off.gif" alt="" id="lampu2">
+          <br>
+          <div>
+            <label for="toggle2" class="switch">
+              <input type="checkbox" onchange="saklar()" id="toggle2">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/images/off.gif" alt="" id="lampu3">
+          <br>
+          <div>
+            <label for="toggle3" class="switch">
+              <input type="checkbox" onchange="saklar()" id="toggle3">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RUANGAN 1 END -->
+
+    <!-- RUANGAN 2 -->
+
+    <div class="ruang">
+      <div class="nama" style="width: 200px;">
+        <h2>Ruang Makan</h2>
+      </div>
+      <br>
+      <div>
+        <div class="item">
+          <img src="assets/images/off.gif" alt="" id="lampu4">
+          <br>
+          <div>
+            <label for="toggle4" class="switch">
+              <input type="checkbox" onchange="saklar()" id="toggle4">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RUANGAN 2 END -->
+
+    <!-- RUANGAN 3 -->
+
+    <div class="ruang">
+      <div class="nama">
+        <h2>Ruang Tidur</h2>
+        <div class="item">
+          <label for="ruang2" class="switch">
+            <input type="checkbox" onchange="rSaklar2()" id="ruang2">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <br>
+      <div class="tabel">
+        <div class="item">
+          <img src="assets/images/off.gif" alt="" id="lampu5">
+          <br>
+          <div>
+            <label for="toggle5" class="switch">
+              <input type="checkbox" onchange="saklar()" id="toggle5">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/images/off.gif" alt="" id="lampu6">
+          <br>
+          <div>
+            <label for="toggle6" class="switch">
+              <input type="checkbox" onchange="saklar()" id="toggle6">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RUANGAN 2 END -->
+
+    <!-- RUANGAN 3 -->
+
+    <div class="ruang">
+      <div class="nama">
+        <h2>Ruang Tamu</h2>
+        <div class="item">
+          <label for="ruang3" class="switch">
+            <input type="checkbox" onchange="rSaklar3()" id="ruang3">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <br>
+      <div class="tabel">
+        <div class="item">
+          <img src="assets/images/off.gif" alt="" id="lampu7">
+          <br>
+          <div>
+            <label for="toggle7" class="switch">
+              <input type="checkbox" onchange="saklar()" id="toggle7">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/images/off.gif" alt="" id="lampu8">
+          <br>
+          <div>
+            <label for="toggle8" class="switch">
+              <input type="checkbox" onchange="saklar()" id="toggle8">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/images/off.gif" alt="" id="lampu9">
+          <br>
+          <div>
+            <label for="toggle9" class="switch">
+              <input type="checkbox" onchange="saklar()" id="toggle9">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/images/off.gif" alt="" id="lampua">
+          <br>
+          <div>
+            <label for="togglea" class="switch">
+              <input type="checkbox" onchange="saklar()" id="togglea">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RUANGAN 4 END -->
+
+    <a href="index.html" style="text-decoration: none;">
+      <div class="kembali">
+
+        <h1>Kembali</h1>
+      </div>
+    </a>
+  </div>
+
+  <!-- CONTENT END -->
+
+  <!-- SCRIPT -->
+
+  <script src="saklar.js"></script>
+
+</body>
+
+</html>
